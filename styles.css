@@ -10,10 +10,10 @@ body{
     background: url(images/audio-brown-business-1337753.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover !important;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
     max-width:100%;
     max-height:100%;
     width:auto;
