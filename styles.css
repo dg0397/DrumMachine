@@ -17,6 +17,7 @@ body{
     max-width:100%;
     max-height:100%;
     width:auto;
+    min-height: 80vh;
 }
 #drum-machine{
     margin: 5vw auto;
