@@ -4,6 +4,7 @@ const range = document.querySelector('.slider');
 const display = document.getElementById('display');
 const power = document.querySelector('.power-btn');
 let on=true;
+display.value="";
 
 function removeTransition(e){
     if(e.propertyName !== 'transform')return; // stop it if property is not a transform
@@ -54,6 +55,7 @@ function playKey(e){
 function powerDM(e){
     on=!on
     this.classList.toggle('active');
+    display.value=""
 }
 
 window.addEventListener('keydown',playKey);
