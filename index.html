@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drum Machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i" rel="stylesheet">
+    <link rel="shortcut icon" href="images/FirstCanvas.png">
+</head>
+<body>
+    <div id="drum-machine">
+        <div class="container-keys">
+            <div class="row">
+                <div id='clap' class="drum-pad" data-key="81">
+                    <p>Q</p>
+                    <audio id="Q" class="clip" src="music/clap-808.wav" data-key="81"></audio>
+                </div>
+                <div id="hihat-dist" class="drum-pad" data-key="87">
+                    <p>W</p>
+                    <audio id="W" class="clip" src="music/hihat-dist02.wav" data-key="87"></audio>
+                </div>
+                <div id="kick-oldschool" class="drum-pad" data-key="69">
+                    <p>E</p>
+                    <audio id="E" class="clip" src="music/kick-oldschool.wav" data-key="69"></audio>
+                </div>
+            </div>
+            <div class="row">
+                <div id="kick-stomp" class="drum-pad" data-key="65">
+                    <p>A</p>
+                    <audio id="A" class="clip" src="music/kick-stomp.wav" data-key="65"></audio>
+                </div>
+                <div id="kick-thump" class="drum-pad" data-key="83">
+                    <p>S</p>
+                    <audio id="S" class="clip" src="music/kick-thump.wav" data-key="83" ></audio>
+                </div>
+                <div id="snare-modular" class="drum-pad" data-key="68">
+                    <p>D</p>
+                    <audio id="D" class="clip" src="music/snare-modular.wav" data-key="68"></audio>
+                </div>
+            </div>
+            <div class="row">
+                <div id="snare-punch" class="drum-pad" data-key="90">
+                    <p>Z</p>
+                    <audio id="Z" class="clip" src="music/snare-punch.wav" data-key="90"></audio>
+                </div>
+                <div id="snare-sumo" class="drum-pad" data-key="88">
+                    <p>X</p>
+                    <audio id="X" class="clip" src="music/snare-sumo.wav" data-key="88"></audio>
+                </div>
+                <div id="tom-analog" class="drum-pad" data-key="67">
+                    <p>C</p>
+                    <audio id="C" class="clip" src="music/tom-analog.wav" data-key="67"></audio>
+                </div>
+            </div>
+        </div>
+        <div class="container-menu">
+            <div class="btn">
+                <input type="button" value="Power" class="power-btn">
+            </div>
+            <div class="display">
+                <input type="text" id="display" disabled>
+            </div>
+            <div class="range">
+                <input type="range" name="volume" class="slider" min="0" max="1" step=".05" value=".5">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
